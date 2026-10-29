@@ -439,8 +439,9 @@
           </div>
 
           <div class="auth-header">
-            <h2 class="auth-title">Login</h2>
-            <p class="auth-subtitle">Access your GTNationDEV account to continue your journey.</p>
+            <div class="auth-tag-subtle">GTNationDEV Portal</div>
+            <h2 class="auth-title">Welcome <em>Back</em></h2>
+            <p class="auth-subtitle">Access your GTNationDEV workspace to continue building.</p>
           </div>
 
           <form id="loginForm" class="auth-form" novalidate>
@@ -450,6 +451,7 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </span>
                 <div class="input-inner">
+                  <span class="input-label-mini">Email or Phone Number</span>
                   <input type="text" id="loginIdentifier" class="form-input" placeholder="dan.mungufeni.dan@gmail.com or Phone" required>
                 </div>
               </div>
@@ -461,18 +463,40 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                 </span>
                 <div class="input-inner">
-                  <input type="password" id="loginPassword" class="form-input" placeholder="Password" required>
+                  <span class="input-label-mini">Password</span>
+                  <input type="password" id="loginPassword" class="form-input" placeholder="Enter your password" required>
                 </div>
-                <button type="button" class="input-action-btn btn-toggle-password" data-target="loginPassword">
+                <button type="button" class="input-action-btn btn-toggle-password" data-target="loginPassword" title="Toggle password visibility">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                 </button>
               </div>
+            </div>
+
+            <div class="form-options-row">
+              <label class="custom-checkbox-label">
+                <input type="checkbox" id="rememberMe" class="custom-checkbox" checked>
+                <span>Remember me</span>
+              </label>
+              <a href="#" class="forgot-password-link" onclick="alert('Password reset link sent to your registered email.'); return false;">Forgot password?</a>
             </div>
 
             <button type="submit" class="btn-auth-submit">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               <span>Login</span>
             </button>
+
+            <div class="auth-separator">or continue with</div>
+
+            <div class="social-buttons-grid">
+              <button type="button" class="btn-social">
+                <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.03h3.88c2.27-2.09 3.66-5.17 3.66-9.12z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.03c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.27v3.13C3.25 21.31 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.29c-.25-.72-.38-1.49-.38-2.29s.13-1.57.38-2.29V6.57H1.27C.46 8.19 0 10.03 0 12s.46 3.81 1.27 5.43l4.01-3.14z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.69 1.27 6.57l4.01 3.14c.95-2.83 3.6-4.96 6.72-4.96z"/></svg>
+                <span>Google</span>
+              </button>
+              <button type="button" class="btn-social">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub</span>
+              </button>
+            </div>
           </form>
         </div>
 
@@ -487,8 +511,9 @@
           </div>
 
           <div class="auth-header">
-            <h2 class="auth-title">Register</h2>
-            <p class="auth-subtitle">Create your GTNationDEV account and get started.</p>
+            <div class="auth-tag-subtle">Join GTNationDEV</div>
+            <h2 class="auth-title">Create <em>Account</em></h2>
+            <p class="auth-subtitle">Fill in your details to create your GTNationDEV account and get started.</p>
           </div>
 
           <form id="registerForm" class="auth-form" novalidate>
@@ -518,22 +543,96 @@
               </div>
             </div>
 
+            <div class="form-row">
+              <div class="form-group">
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </span>
+                  <div class="input-inner">
+                    <span class="input-label-mini">Phone Number</span>
+                    <input type="tel" id="regPhone" class="form-input" placeholder="+256 778 625624">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  </span>
+                  <div class="input-inner">
+                    <span class="input-label-mini">Password</span>
+                    <input type="password" id="regPassword" class="form-input" placeholder="Min 8 characters" required>
+                  </div>
+                  <button type="button" class="input-action-btn btn-toggle-password" data-target="regPassword">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
             <div class="form-group">
               <div class="input-container">
                 <span class="input-icon-left">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                 </span>
                 <div class="input-inner">
-                  <span class="input-label-mini">Password</span>
-                  <input type="password" id="regPassword" class="form-input" placeholder="Minimum 8 characters" required>
+                  <span class="input-label-mini">Confirm Password</span>
+                  <input type="password" id="regPasswordConfirm" class="form-input" placeholder="Re-enter password" required>
+                </div>
+                <button type="button" class="input-action-btn btn-toggle-password" data-target="regPasswordConfirm">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-container">
+                <span class="input-icon-left">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </span>
+                <div class="input-inner">
+                  <span class="input-label-mini">I am a</span>
+                  <select id="regRole" class="form-select">
+                    <option value="developer">Web Developer / Software Engineer</option>
+                    <option value="it_support">IT Support / Systems Admin</option>
+                    <option value="designer">UI/UX Designer & Creative</option>
+                    <option value="client">Client / Business Partner</option>
+                    <option value="student">Student / Aspire Leader</option>
+                  </select>
                 </div>
               </div>
+            </div>
+
+            <div class="form-options-row">
+              <label class="custom-checkbox-label">
+                <input type="checkbox" id="regTerms" class="custom-checkbox" checked required>
+                <span>I agree to the Terms & Conditions and Privacy Policy</span>
+              </label>
             </div>
 
             <button type="submit" class="btn-auth-submit">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
               <span>Create Account</span>
             </button>
+
+            <div class="auth-separator">or register with</div>
+
+            <div class="social-buttons-grid">
+              <button type="button" class="btn-social">
+                <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.03h3.88c2.27-2.09 3.66-5.17 3.66-9.12z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.03c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.27v3.13C3.25 21.31 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.29c-.25-.72-.38-1.49-.38-2.29s.13-1.57.38-2.29V6.57H1.27C.46 8.19 0 10.03 0 12s.46 3.81 1.27 5.43l4.01-3.14z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.69 1.27 6.57l4.01 3.14c.95-2.83 3.6-4.96 6.72-4.96z"/></svg>
+                <span>Google</span>
+              </button>
+              <button type="button" class="btn-social">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub</span>
+              </button>
+              <button type="button" class="btn-social">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <span>X (Twitter)</span>
+              </button>
+            </div>
           </form>
         </div>
 
@@ -548,7 +647,8 @@
           </div>
 
           <div class="auth-header">
-            <h2 class="auth-title">Download CV & Assets</h2>
+            <div class="auth-tag-subtle">Instant Access</div>
+            <h2 class="auth-title">Download <em>CV & Specs</em></h2>
             <p class="auth-subtitle">Get instant access to Dan Mungufeni's official Curriculum Vitae, Muni University records, and project specs.</p>
           </div>
 
