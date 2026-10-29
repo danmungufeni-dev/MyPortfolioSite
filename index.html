@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GTNationDEV | Dan Mungufeni - Ambient Control of Your Space</title>
-  <meta name="description" content="Ambient control of your space - without lifting a finger. Engineered by Dan Mungufeni (GTNationDEV).">
+  <title>GTNationDEV | Dan Mungufeni - Web Developer, IT Specialist & Creative Technologist</title>
+  <meta name="description" content="Official portfolio of Dan Mungufeni (GTNationDEV) - Web Developer, Assistant IT Personnel at Industrial Globus Uganda Ltd, and BIT Scholar at Muni University.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
 
   <!-- ==========================================================================
-       TOP NAVIGATION BAR (Matching Mockup with Bullets & Controls)
+       TOP NAVIGATION BAR
        ========================================================================== -->
   <header class="nestive-header">
     <div class="nestive-header-inner">
@@ -28,11 +28,15 @@
       <nav class="nestive-nav">
         <a href="#home" class="active">Home</a>
         <span class="nav-bullet">&bull;</span>
-        <a href="#features">Features</a>
+        <a href="#about">About</a>
         <span class="nav-bullet">&bull;</span>
-        <a href="#devices">Devices</a>
+        <a href="#services">Services</a>
         <span class="nav-bullet">&bull;</span>
-        <a href="#support">Support</a>
+        <a href="#portfolio">Portfolio</a>
+        <span class="nav-bullet">&bull;</span>
+        <a href="#devices">Hardware</a>
+        <span class="nav-bullet">&bull;</span>
+        <a href="#resume" data-open-modal="download">Resume</a>
         <span class="nav-bullet">&bull;</span>
         <a href="#login" data-open-modal="login">Login</a>
       </nav>
@@ -44,14 +48,11 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </button>
 
-        <button class="icon-btn" title="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
+        <a href="https://wa.me/256778625624" target="_blank" class="icon-btn" title="Contact on WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
 
-        <button class="icon-btn" title="Menu" data-open-modal="login">
+        <button class="icon-btn" title="Sign In Portal" data-open-modal="login">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -72,193 +73,303 @@
   </header>
 
   <!-- ==========================================================================
-       HERO SECTION (Pixel-Matched to Nestive Mockup)
+       HERO SECTION (Matching Mockup Layout with Dan's Details)
        ========================================================================== -->
   <section class="nestive-hero" id="home">
     <div class="nestive-hero-grid">
       <!-- Left Column: Typography, Social Proof & Actions -->
       <div class="nestive-left-col">
-        <!-- Avatar Stack Pill -->
+        <!-- Avatar Stack Pill with Dan's Real Profile -->
         <div class="social-proof-pill">
-          <img src="assets/images/avatar-cluster.png" alt="Users Community" class="avatar-cluster-img">
-          <span class="social-proof-text">+10,000 people are already using &ldquo;GTNationDEV&rdquo;</span>
+          <div style="display: flex; align-items: center;">
+            <img src="assets/images/dan-mungufeni.jpg" alt="Dan Mungufeni" style="width: 28px; height: 28px; border-radius: 50%; object-fit: cover; border: 2px solid #ffffff; z-index: 3;">
+            <img src="assets/images/avatar-cluster.png" alt="Collaborators" class="avatar-cluster-img" style="margin-left: -10px; z-index: 2;">
+          </div>
+          <span class="social-proof-text">+100+ digital solutions delivered by &ldquo;GTNationDEV&rdquo;</span>
         </div>
 
         <!-- Editorial Serif Title -->
         <h1 class="hero-editorial-title">
-          <span class="italic-part">Control Your Home</span>
+          <span class="italic-part">Dan Mungufeni</span>
           <span class="roman-part">The Smart Way</span>
         </h1>
 
-        <!-- Subtitle -->
+        <!-- Subtitle tailored to Dan's real profile -->
         <p class="hero-editorial-desc">
-          Ambient control of your space &mdash; without lifting a finger. Your home is just four steps away from being autonomous!
+          Web Developer & Assistant IT Personnel at Industrial Globus Uganda Ltd. Muni University BIT scholar delivering web platforms, Flutter mobile apps (PadCare), graphic design, and hardware solutions &mdash; just four steps away from scalable reality!
         </p>
 
-        <!-- Split CTA Button -->
-        <button class="split-cta-button" data-open-modal="register">
-          <div class="split-cta-icon-box">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="4"></circle>
-              <line x1="12" y1="2" x2="12" y2="5"></line>
-              <line x1="12" y1="19" x2="12" y2="22"></line>
-              <line x1="2" y1="12" x2="5" y2="12"></line>
-              <line x1="19" y1="12" x2="22" y2="12"></line>
-              <circle cx="6" cy="6" r="1" fill="currentColor"></circle>
-              <circle cx="18" cy="6" r="1" fill="currentColor"></circle>
-              <circle cx="6" cy="18" r="1" fill="currentColor"></circle>
-              <circle cx="18" cy="18" r="1" fill="currentColor"></circle>
-            </svg>
-          </div>
-          <span class="split-cta-label">Connect Your Space</span>
-        </button>
+        <!-- CTA Buttons -->
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 3.5rem;">
+          <!-- Primary Split Button: See Portfolio -->
+          <a href="#portfolio" class="split-cta-button" style="margin-bottom: 0;">
+            <div class="split-cta-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <span class="split-cta-label">See Portfolio</span>
+          </a>
 
-        <!-- Four Interactive Glass Steps -->
+          <!-- Secondary Split Button: Download CV -->
+          <button class="split-cta-button" style="margin-bottom: 0; background: rgba(255, 255, 255, 0.22); border: 1px solid rgba(255, 255, 255, 0.4);" data-open-modal="download">
+            <div class="split-cta-icon-box" style="background: rgba(255, 255, 255, 0.25);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </div>
+            <span class="split-cta-label" style="color: #ffffff;">Download CV</span>
+          </button>
+        </div>
+
+        <!-- Four Interactive Glass Steps Tailored to Dan's Portfolio -->
         <div class="four-steps-row">
-          <!-- Step 01: Register -->
-          <div class="step-card-item" data-open-modal="register">
+          <!-- Step 01: About Me -->
+          <a href="#about" class="step-card-item">
             <div class="step-glass-box">
               <svg class="step-icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
-              <span class="step-name-text">Register</span>
+              <span class="step-name-text">About Me</span>
             </div>
             <span class="step-number-tag">01</span>
-          </div>
+          </a>
 
-          <!-- Step 02: Add Devices -->
-          <div class="step-card-item" onclick="location.href='#devices'">
+          <!-- Step 02: Services -->
+          <a href="#services" class="step-card-item">
+            <div class="step-glass-box">
+              <svg class="step-icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+              <span class="step-name-text">Services</span>
+            </div>
+            <span class="step-number-tag">02</span>
+          </a>
+
+          <!-- Step 03: Projects -->
+          <a href="#portfolio" class="step-card-item">
             <div class="step-glass-box">
               <svg class="step-icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                 <line x1="8" y1="21" x2="16" y2="21"></line>
                 <line x1="12" y1="17" x2="12" y2="21"></line>
               </svg>
-              <span class="step-name-text">Add Devices</span>
-            </div>
-            <span class="step-number-tag">02</span>
-          </div>
-
-          <!-- Step 03: Customize -->
-          <div class="step-card-item" onclick="location.href='#features'">
-            <div class="step-glass-box">
-              <svg class="step-icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="3"></circle>
-                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-              </svg>
-              <span class="step-name-text">Customize</span>
+              <span class="step-name-text">Portfolio</span>
             </div>
             <span class="step-number-tag">03</span>
-          </div>
+          </a>
 
-          <!-- Step 04: Start Using -->
+          <!-- Step 04: Download CV -->
           <div class="step-card-item" data-open-modal="download">
             <div class="step-glass-box">
               <svg class="step-icon-stroke" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
               </svg>
-              <span class="step-name-text">Start Using</span>
+              <span class="step-name-text">Download CV</span>
             </div>
             <span class="step-number-tag">04</span>
           </div>
         </div>
       </div>
 
-      <!-- Right Column: 3D Smart Architectural Pavilion -->
+      <!-- Right Column: 3D Smart Pavilion + Dan Mungufeni Profile Card -->
       <div class="nestive-right-col">
         <img src="assets/images/pavilion-full.png" alt="GTNationDEV 3D Smart Pavilion" class="pavilion-showcase-img">
+
+        <!-- Floating Glassmorphic Founder Badge -->
+        <div style="position: absolute; bottom: 1rem; left: 1.5rem; background: rgba(255, 255, 255, 0.24); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 18px; padding: 0.85rem 1.35rem; display: flex; align-items: center; gap: 0.95rem; box-shadow: 0 15px 35px rgba(0,0,0,0.18);">
+          <img src="assets/images/dan-mungufeni.jpg" alt="Dan Mungufeni" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 2px solid #ffffff;">
+          <div>
+            <div style="font-size: 0.95rem; font-weight: 700; color: #ffffff;">Dan Mungufeni</div>
+            <div style="font-size: 0.78rem; color: #e6ede6;">Arua City, Uganda &bull; Muni University BIT</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       FEATURES & CORE ARCHITECTURE SECTION
+       ABOUT & BIOGRAPHY SECTION
        ========================================================================== -->
-  <section class="nestive-section" id="features">
-    <div class="section-tag-subtle">Intelligent Systems</div>
-    <h2 class="section-editorial-h2">Designed for Seamless <em>Autonomous Living</em></h2>
+  <section class="nestive-section" id="about">
+    <div class="section-tag-subtle">Personal Profile</div>
+    <h2 class="section-editorial-h2">Driven by Purpose, Grounded in <em>Real Skills</em></h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; margin-top: 2rem;">
+      <div style="background: rgba(255, 255, 255, 0.14); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 20px; padding: 2.25rem;">
+        <h3 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 1rem;">Biography & Leadership</h3>
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #e6ede6; margin-bottom: 1rem;">
+          Born January 5, 2002, and residing in <strong>Arua City, Uganda</strong>, I manage tech operations as Assistant IT Personnel at <strong>Industrial Globus Uganda Ltd</strong>, direct digital services under <strong>GTNationDEV</strong> and <strong>AJMTechnologies</strong>, and pursue a Bachelor of Information Technology at <strong>Muni University</strong>.
+        </p>
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #e6ede6;">
+          Selected into <strong>Cohort 4 of the Aspire Leaders Program</strong> (founded by Harvard faculty), serving as a Biometric Voter Verification Kit (BVVK) Operator during the 2026 General Elections, and producing original Afrobeat, trap, and Amapiano music tracks.
+        </p>
+      </div>
+
+      <div style="background: rgba(255, 255, 255, 0.14); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 20px; padding: 2.25rem; display: flex; flex-direction: column; gap: 0.85rem;">
+        <h3 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 0.5rem;">Verified Credentials</h3>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.5rem;">
+          <span>University:</span>
+          <span style="font-weight: 700; color: #ffffff;">Muni University (Year 2 Sem 1)</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.5rem;">
+          <span>Student Reg No:</span>
+          <span style="font-weight: 700; color: #ffffff;">2025/U/MIT/02154</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.5rem;">
+          <span>UACE (High School):</span>
+          <span style="font-weight: 600; color: #ffffff;">Cornerstone SS, Arua (2023)</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.5rem;">
+          <span>UCE:</span>
+          <span style="font-weight: 600; color: #ffffff;">Our Lady of Africa SS, Namilyango (2020)</span>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span>Primary (PLE):</span>
+          <span style="font-weight: 600; color: #ffffff;">Junior Angels Model School, Hima (2016)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES & CORE CAPABILITIES SECTION
+       ========================================================================== -->
+  <section class="nestive-section" id="services" style="padding-top: 1rem;">
+    <div class="section-tag-subtle">Core Disciplines</div>
+    <h2 class="section-editorial-h2">Digital Services & <em>Technical Execution</em></h2>
     <p class="section-lead-paragraph">
-      Engineered by <strong>Dan Mungufeni</strong> under <strong>GTNationDEV</strong> &mdash; blending cutting-edge mobile apps (PadCare), industrial IT operations, hardware diagnostic rigs, and elegant responsive web frameworks.
+      Providing comprehensive software, media, and hardware support for enterprises and individual clients across Uganda and worldwide.
     </p>
 
     <div class="nestive-card-grid">
-      <!-- Feature 1 -->
       <div class="nestive-glass-card">
         <div class="nestive-card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
         </div>
-        <h3>Web & Digital Platforms</h3>
-        <p>Zero-dependency, high-speed architectures, client authentication engines, and cloud microservices built for performance and security.</p>
+        <h3>Web Development</h3>
+        <p>Responsive, zero-dependency high-speed websites, full-stack portals, and secure cloud API integrations.</p>
       </div>
 
-      <!-- Feature 2 -->
       <div class="nestive-glass-card">
         <div class="nestive-card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
         </div>
-        <h3>PadCare Mobile Ecosystem</h3>
-        <p>Cross-platform Flutter application dedicated to women's reproductive health tracking, sanitary distribution, and educational support across Uganda.</p>
+        <h3>Mobile Engineering (Flutter)</h3>
+        <p>Cross-platform Flutter applications including <strong>PadCare</strong> &mdash; dedicated to menstrual healthcare tracking and accessibility.</p>
       </div>
 
-      <!-- Feature 3 -->
       <div class="nestive-glass-card">
         <div class="nestive-card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"></path></svg>
         </div>
-        <h3>Enterprise IT & Cyber Labs</h3>
-        <p>Practical cybersecurity labs at Hack The Box Academy & DIZA Academy, Kali Linux system administration, and Industrial Globus IT personnel operations.</p>
+        <h3>Graphic Design & Brand</h3>
+        <p>Distinctive logo creation, Figma interactive prototyping, marketing posters, typography, and visual assets.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- ==========================================================================
-       DEVICES & HARDWARE WORKSTATION SECTION
-       ========================================================================== -->
-  <section class="nestive-section" id="devices" style="padding-top: 1rem;">
-    <div class="section-tag-subtle">Hardware & Environment</div>
-    <h2 class="section-editorial-h2">High-Performance <em>Connected Hardware</em></h2>
-    <p class="section-lead-paragraph">
-      Operated from Arua City, Uganda: featuring dual enterprise workstations, mobile testing environments, and AI-accelerated developer toolchains.
-    </p>
+      <div class="nestive-glass-card">
+        <div class="nestive-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"></path><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+        </div>
+        <h3>Videography & Audio</h3>
+        <p>Cinematic video editing, studio photography, and original music track production (Afrobeat, trap, and Amapiano).</p>
+      </div>
 
-    <div class="nestive-card-grid">
+      <div class="nestive-glass-card">
+        <div class="nestive-card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        </div>
+        <h3>Hardware & Maintenance</h3>
+        <p>Enterprise PC assembly, thermal tuning, motherboard diagnostics, and network configuration at Industrial Globus.</p>
+      </div>
+
       <div class="nestive-glass-card">
         <div class="nestive-card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
         </div>
-        <h3>Primary Development Rig</h3>
-        <p><strong>11th Gen Intel Core i5-11400</strong> processor, 16 GB high-speed RAM, Windows 11 Pro, optimized for rapid compilation and containerization.</p>
-      </div>
-
-      <div class="nestive-glass-card">
-        <div class="nestive-card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><line x1="12" y1="4" x2="12" y2="20"></line></svg>
-        </div>
-        <h3>HP EliteDesk 800 Tower</h3>
-        <p>Secondary workstation dedicated to continuous network routing, system diagnostics, background automation, and server administration.</p>
-      </div>
-
-      <div class="nestive-glass-card">
-        <div class="nestive-card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
-        </div>
-        <h3>Muni University Standing</h3>
-        <p>Bachelor of Information Technology (Year 2, Semester 1 &bull; Reg: <strong>2025/U/MIT/02154</strong>). Grounded in technical discipline and systems engineering.</p>
+        <h3>Software & Cyber Labs</h3>
+        <p>Cybersecurity lab exercises at Hack The Box Academy & DIZA Academy, Kali Linux systems, and AI workflows.</p>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       SUPPORT & CV DOWNLOAD CALLOUT
+       PORTFOLIO & ACTIVE PROJECTS SECTION
        ========================================================================== -->
-  <section class="nestive-section" id="support" style="padding-top: 1rem;">
+  <section class="nestive-section" id="portfolio" style="padding-top: 1rem;">
+    <div class="section-tag-subtle">Featured Deployments</div>
+    <h2 class="section-editorial-h2">Selected Real-World <em>Projects</em></h2>
+    
+    <div class="nestive-card-grid">
+      <!-- Project 1: PadCare App -->
+      <div class="nestive-glass-card">
+        <span style="font-size: 0.75rem; font-weight: 700; color: #f43f5e; text-transform: uppercase;">FLUTTER &bull; MOBILE &bull; HEALTH</span>
+        <h3>PadCare Mobile Application</h3>
+        <p>Dedicated cross-platform Flutter application providing cycle tracking, healthcare distribution, and reproductive education across East Africa.</p>
+        <span style="font-size: 0.82rem; font-weight: 700; color: #ffffff;">Active Development</span>
+      </div>
+
+      <!-- Project 2: Industrial Globus IT Role -->
+      <div class="nestive-glass-card">
+        <span style="font-size: 0.75rem; font-weight: 700; color: #38bdf8; text-transform: uppercase;">ENTERPRISE IT &bull; INFRASTRUCTURE</span>
+        <h3>Industrial Globus Uganda Ltd</h3>
+        <p>Serving as Assistant IT Personnel &mdash; managing network switches, system health telemetry, data security, and hardware diagnostics.</p>
+        <span style="font-size: 0.82rem; font-weight: 700; color: #ffffff;">Current Role</span>
+      </div>
+
+      <!-- Project 3: BVVK Electoral Commission -->
+      <div class="nestive-glass-card">
+        <span style="font-size: 0.75rem; font-weight: 700; color: #4ade80; text-transform: uppercase;">GOVERNMENT &bull; BIOMETRIC SYSTEMS</span>
+        <h3>BVVK Operator &mdash; 2026 Elections</h3>
+        <p>Operated Biometric Voter Verification Kits for the Electoral Commission, ensuring secure voter authentication and data reliability.</p>
+        <span style="font-size: 0.82rem; font-weight: 700; color: #ffffff;">Verified Public Service</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DEVICES & WORKSTATION RIG SECTION
+       ========================================================================== -->
+  <section class="nestive-section" id="devices" style="padding-top: 1rem;">
+    <div class="section-tag-subtle">Workstation Architecture</div>
+    <h2 class="section-editorial-h2">Hardware & Engineering <em>Environment</em></h2>
+
+    <div class="nestive-card-grid">
+      <div class="nestive-glass-card">
+        <h3>11th Gen Intel Core i5-11400</h3>
+        <p>Primary workstation equipped with 16 GB high-speed RAM, Windows 11 Pro, and SSD storage optimized for rapid software compilation.</p>
+      </div>
+
+      <div class="nestive-glass-card">
+        <h3>HP EliteDesk 800 Tower</h3>
+        <p>Secondary workstation dedicated to background services, network labs, server hosting, and diagnostic routines.</p>
+      </div>
+
+      <div class="nestive-glass-card">
+        <h3>Samsung Galaxy Android</h3>
+        <p>Dedicated physical device for on-device Flutter mobile app testing, responsive touch verification, and telemetry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RESUME & CV DOWNLOAD SECTION
+       ========================================================================== -->
+  <section class="nestive-section" id="resume" style="padding-top: 1rem;">
     <div style="background: rgba(255, 255, 255, 0.16); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 24px; padding: 4rem 3rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
-      <div class="section-tag-subtle">Verified Documentation</div>
+      <div class="section-tag-subtle">Official Record</div>
       <h2 class="section-editorial-h2" style="margin-bottom: 0;">Download Dan Mungufeni's <em>Official CV</em></h2>
       <p class="section-lead-paragraph" style="text-align: center; margin: 0 auto;">
-        Access verified credentials, employment history at Industrial Globus Uganda Ltd, BVVK electoral system operator certification, and Flutter development milestones.
+        Access verified credentials, Muni University academic standing (Reg: 2025/U/MIT/02154), employment at Industrial Globus Uganda Ltd, and PadCare Flutter app specs.
       </p>
 
       <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem;">
@@ -270,7 +381,7 @@
         </button>
 
         <a href="assets/docs/Dan_Mungufeni_CV.html" target="_blank" class="split-cta-button" style="margin-bottom: 0; background: rgba(255,255,255,0.25); border: 1px solid rgba(255,255,255,0.4);">
-          <span class="split-cta-label" style="color: #ffffff; padding: 0.8rem 1.75rem;">View Printable Document &rarr;</span>
+          <span class="split-cta-label" style="color: #ffffff; padding: 0.8rem 1.75rem;">View Printable CV &rarr;</span>
         </a>
       </div>
     </div>
@@ -281,17 +392,19 @@
        ========================================================================== -->
   <footer class="nestive-footer">
     <div class="nestive-footer-inner">
-      <div style="font-size: 1.25rem; font-weight: 700; color: #ffffff;">GTNationDEV</div>
+      <div style="font-size: 1.35rem; font-weight: 700; color: #ffffff;">GTNationDEV &bull; Dan Mungufeni</div>
       <div class="footer-nav-bullets">
         <a href="#home">Home</a>
         <span>&bull;</span>
-        <a href="#features">Features</a>
+        <a href="#about">About</a>
         <span>&bull;</span>
-        <a href="#devices">Devices</a>
+        <a href="#services">Services</a>
         <span>&bull;</span>
-        <a href="#support">Support</a>
+        <a href="#portfolio">Portfolio</a>
         <span>&bull;</span>
         <a href="https://wa.me/256778625624" target="_blank">WhatsApp: +256 778 625624</a>
+        <span>&bull;</span>
+        <a href="mailto:dan.mungufeni.dan@gmail.com">dan.mungufeni.dan@gmail.com</a>
       </div>
       <div>&copy; 2026 Dan Mungufeni &bull; Arua City, Uganda. All rights reserved.</div>
     </div>
@@ -302,12 +415,10 @@
        ========================================================================== -->
   <div id="authModal" class="modal-overlay">
     <div class="auth-card">
-      <!-- Left Hero Showcase Panel -->
       <div class="auth-hero-panel">
         <img id="authHeroImg" class="auth-hero-img" src="assets/images/hero-login.png" alt="GTNationDEV Dan Mungufeni">
       </div>
 
-      <!-- Right Form Panel -->
       <div class="auth-form-panel">
         <button id="modalCloseBtn" class="modal-close-btn" title="Close dialog">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -328,7 +439,7 @@
 
           <div class="auth-header">
             <h2 class="auth-title">Login</h2>
-            <p class="auth-subtitle">Access your account to control and monitor your smart space.</p>
+            <p class="auth-subtitle">Access your GTNationDEV account to continue your journey.</p>
           </div>
 
           <form id="loginForm" class="auth-form" novalidate>
@@ -338,7 +449,7 @@
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </span>
                 <div class="input-inner">
-                  <input type="text" id="loginIdentifier" class="form-input" placeholder="Email or Phone Number" required>
+                  <input type="text" id="loginIdentifier" class="form-input" placeholder="dan.mungufeni.dan@gmail.com or Phone" required>
                 </div>
               </div>
             </div>
@@ -351,37 +462,16 @@
                 <div class="input-inner">
                   <input type="password" id="loginPassword" class="form-input" placeholder="Password" required>
                 </div>
-                <button type="button" class="input-action-btn btn-toggle-password" data-target="loginPassword" title="Toggle password visibility">
+                <button type="button" class="input-action-btn btn-toggle-password" data-target="loginPassword">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                 </button>
               </div>
-            </div>
-
-            <div class="form-options-row">
-              <label class="custom-checkbox-label">
-                <input type="checkbox" id="rememberMe" class="custom-checkbox" checked>
-                <span>Remember me</span>
-              </label>
-              <a href="#" class="forgot-password-link" onclick="alert('Password reset link sent.'); return false;">Forgot password?</a>
             </div>
 
             <button type="submit" class="btn-auth-submit">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               <span>Login</span>
             </button>
-
-            <div class="auth-separator">or continue with</div>
-
-            <div class="social-buttons-grid">
-              <button type="button" class="btn-social">
-                <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.03h3.88c2.27-2.09 3.66-5.17 3.66-9.12z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.03c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.27v3.13C3.25 21.31 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.29c-.25-.72-.38-1.49-.38-2.29s.13-1.57.38-2.29V6.57H1.27C.46 8.19 0 10.03 0 12s.46 3.81 1.27 5.43l4.01-3.14z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.69 1.27 6.57l4.01 3.14c.95-2.83 3.6-4.96 6.72-4.96z"/></svg>
-                <span>Google</span>
-              </button>
-              <button type="button" class="btn-social">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                <span>GitHub</span>
-              </button>
-            </div>
           </form>
         </div>
 
@@ -397,7 +487,7 @@
 
           <div class="auth-header">
             <h2 class="auth-title">Register</h2>
-            <p class="auth-subtitle">Fill in your details to create your account and get started.</p>
+            <p class="auth-subtitle">Create your GTNationDEV account and get started.</p>
           </div>
 
           <form id="registerForm" class="auth-form" novalidate>
@@ -427,47 +517,15 @@
               </div>
             </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <div class="input-container">
-                  <span class="input-icon-left">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  </span>
-                  <div class="input-inner">
-                    <span class="input-label-mini">Phone Number</span>
-                    <input type="tel" id="regPhone" class="form-input" placeholder="+256 778 625624">
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="input-container">
-                  <span class="input-icon-left">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                  </span>
-                  <div class="input-inner">
-                    <span class="input-label-mini">Password</span>
-                    <input type="password" id="regPassword" class="form-input" placeholder="Minimum 8 characters" required>
-                  </div>
-                  <button type="button" class="input-action-btn btn-toggle-password" data-target="regPassword">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-
             <div class="form-group">
               <div class="input-container">
                 <span class="input-icon-left">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                 </span>
                 <div class="input-inner">
-                  <span class="input-label-mini">Confirm Password</span>
-                  <input type="password" id="regConfirmPassword" class="form-input" placeholder="Re-enter your password" required>
+                  <span class="input-label-mini">Password</span>
+                  <input type="password" id="regPassword" class="form-input" placeholder="Minimum 8 characters" required>
                 </div>
-                <button type="button" class="input-action-btn btn-toggle-password" data-target="regConfirmPassword">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                </button>
               </div>
             </div>
 
@@ -490,7 +548,7 @@
 
           <div class="auth-header">
             <h2 class="auth-title">Download CV & Assets</h2>
-            <p class="auth-subtitle">Get instant access to Dan Mungufeni's official Curriculum Vitae and technical credentials.</p>
+            <p class="auth-subtitle">Get instant access to Dan Mungufeni's official Curriculum Vitae, Muni University records, and project specs.</p>
           </div>
 
           <form id="downloadForm" class="auth-form" novalidate>
@@ -561,9 +619,7 @@
     </div>
   </div>
 
-  <!-- Toast Notification Container -->
   <div id="toastContainer" class="toast-container"></div>
-
   <script src="assets/js/main.js"></script>
 </body>
 </html>
