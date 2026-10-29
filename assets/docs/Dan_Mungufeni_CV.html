@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #15803d;
-      --primary-dark: #166534;
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --accent: #ec4899;
       --text-dark: #0f172a;
       --text-muted: #475569;
       --bg-page: #f8fafc;
@@ -25,7 +26,7 @@
       padding: 2.5rem 1rem;
     }
     .cv-container {
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto;
       background: #ffffff;
       padding: 3rem;
@@ -42,14 +43,14 @@
       margin-bottom: 2rem;
     }
     .cv-name {
-      font-size: 2.4rem;
+      font-size: 2.3rem;
       font-weight: 800;
       color: var(--text-dark);
       letter-spacing: -0.03em;
     }
     .cv-title {
-      font-size: 1.15rem;
-      font-weight: 600;
+      font-size: 1.1rem;
+      font-weight: 700;
       color: var(--primary);
       margin-top: 0.25rem;
     }
@@ -63,7 +64,7 @@
     }
     .cv-contact {
       text-align: right;
-      font-size: 0.9rem;
+      font-size: 0.875rem;
       color: var(--text-muted);
       line-height: 1.7;
     }
@@ -73,53 +74,31 @@
       font-weight: 600;
     }
     .section-title {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--primary-dark);
-      border-bottom: 2px solid #bbf7d0;
+      border-bottom: 2px solid #bae6fd;
       padding-bottom: 0.4rem;
       margin: 1.75rem 0 1rem;
     }
     .summary-text {
       color: #334155;
-      font-size: 0.975rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
     }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
+    .item-block {
+      margin-bottom: 1.35rem;
     }
-    .skill-category {
-      background: #f8fafc;
-      padding: 1rem;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
-    .skill-cat-title {
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--text-dark);
-      margin-bottom: 0.5rem;
-    }
-    .skill-list {
-      list-style: none;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-    .experience-item, .project-item {
-      margin-bottom: 1.25rem;
-    }
-    .exp-header {
+    .item-header {
       display: flex;
       justify-content: space-between;
       font-weight: 700;
       font-size: 1rem;
       color: var(--text-dark);
     }
-    .exp-sub {
+    .item-sub {
       display: flex;
       justify-content: space-between;
       font-size: 0.875rem;
@@ -127,12 +106,35 @@
       font-weight: 600;
       margin-bottom: 0.35rem;
     }
-    .exp-desc {
+    .item-desc {
       font-size: 0.9rem;
       color: #475569;
     }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .skill-card {
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .skill-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      margin-bottom: 0.4rem;
+    }
+    .skill-list {
+      list-style: none;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
     .print-actions {
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto 1.5rem;
       display: flex;
       justify-content: flex-end;
@@ -169,87 +171,161 @@
     <header class="cv-header">
       <div>
         <h1 class="cv-name">Dan Mungufeni</h1>
-        <div class="cv-title">Full-Stack Web Developer & UI/UX Designer</div>
-        <div class="cv-brand">GTNationDEV &bull; BUILD &bull; CREATE &bull; INNOVATE</div>
+        <div class="cv-title">Web Developer, IT Specialist & Creative Technologist</div>
+        <div class="cv-brand">GTNationDEV &bull; AJMTechnologies</div>
       </div>
       <div class="cv-contact">
-        <div><strong>Phone:</strong> +256 778 625624</div>
+        <div><strong>Email:</strong> <a href="mailto:dan.mungufeni.dan@gmail.com">dan.mungufeni.dan@gmail.com</a></div>
+        <div><strong>WhatsApp / Tel:</strong> <a href="tel:+256778625624">+256 778 625624</a></div>
+        <div><strong>Location:</strong> Arua City, Uganda</div>
+        <div><strong>Portfolio:</strong> <a href="https://gtnationdev.vercel.app" target="_blank">gtnationdev.vercel.app</a></div>
         <div><strong>GitHub:</strong> <a href="https://github.com/danmungufeni-dev" target="_blank">github.com/danmungufeni-dev</a></div>
-        <div><strong>Portfolio:</strong> danmungufeni-dev.github.io/MyPortfolioSite</div>
-        <div><strong>Location:</strong> Kampala, Uganda</div>
       </div>
     </header>
 
     <section>
       <h2 class="section-title">Professional Summary</h2>
       <p class="summary-text">
-        Dynamic and results-driven Full-Stack Web Developer, UI/UX Designer, and Creative Technologist with proven expertise in building modern, performant, and responsive web applications. Passionate about turning complex ideas into intuitive user experiences with high aesthetic standards, clean code architecture, and robust engineering principles.
+        Results-oriented Web Developer and IT Professional currently pursuing a Bachelor of Information Technology at Muni University. Dual-hatted as Assistant IT Personnel at Industrial Globus Uganda Ltd and Lead Tech Consultant at GTNationDEV and AJMTechnologies. Proven track record executing full-stack web solutions, Flutter mobile apps (PadCare), graphic design, videography, hardware repair, and system administration with Kali Linux. Accepted into Cohort 4 of the Aspire Leaders Program and actively competing in the Huawei ICT Competition 2026/2027.
       </p>
     </section>
 
     <section>
-      <h2 class="section-title">Core Competencies & Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <div class="skill-cat-title">Web Development</div>
-          <ul class="skill-list">
-            <li>HTML5 / CSS3 / JavaScript (ES6+)</li>
-            <li>React / TypeScript / Next.js</li>
-            <li>RESTful APIs & Microservices</li>
-            <li>Node.js / Express</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <div class="skill-cat-title">UI / UX Design</div>
-          <ul class="skill-list">
-            <li>Figma / Wireframing / Prototyping</li>
-            <li>Design Systems & Components</li>
-            <li>Responsive & Mobile-First Design</li>
-            <li>Accessibility (a11y) & Usability</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <div class="skill-cat-title">Creative Technology</div>
-          <ul class="skill-list">
-            <li>Git / GitHub / CI/CD Workflows</li>
-            <li>Performance Optimization</li>
-            <li>Animation & Micro-interactions</li>
-            <li>Modern Cloud Deployment</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Key Projects & Portfolios</h2>
-      <div class="project-item">
-        <div class="exp-header">
-          <span>GTNationDEV Portfolio Platform</span>
+      <h2 class="section-title">Education & Academic Background</h2>
+      
+      <div class="item-block">
+        <div class="item-header">
+          <span>Muni University</span>
           <span>2024 &ndash; Present</span>
         </div>
-        <div class="exp-sub">Lead Architect & Developer</div>
-        <p class="exp-desc">
-          Engineered high-performance developer portfolio platform featuring custom authentication flows, interactive client resource download engines, modern glassmorphic UI, and responsive design systems.
-        </p>
+        <div class="item-sub">Bachelor of Information Technology (Year 2, Semester 1)</div>
+        <p class="item-desc">Registration No: <strong>2025/U/MIT/02154</strong>. Focus on software engineering, database management, network administration, and IT systems.</p>
       </div>
 
-      <div class="project-item">
-        <div class="exp-header">
-          <span>Modern Web Applications & Client Portals</span>
-          <span>2023 &ndash; 2024</span>
+      <div class="item-block">
+        <div class="item-header">
+          <span>Cornerstone Secondary School, Arua</span>
+          <span>Graduated 2023</span>
         </div>
-        <div class="exp-sub">Full-Stack Engineer</div>
-        <p class="exp-desc">
-          Delivered scalable client web applications, landing pages, and interactive dashboards emphasizing speed, security, and responsive touch-first interfaces.
-        </p>
+        <div class="item-sub">Uganda Advanced Certificate of Education (UACE)</div>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>Our Lady of Africa Secondary School, Namilyango</span>
+          <span>Graduated 2020</span>
+        </div>
+        <div class="item-sub">Uganda Certificate of Education (UCE)</div>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>Junior Angels Model School, Hima</span>
+          <span>Graduated 2016</span>
+        </div>
+        <div class="item-sub">Primary Leaving Examination (PLE)</div>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">Contact & Availability</h2>
-      <p class="summary-text">
-        Available for full-time engineering roles, freelance contracts, and collaborative software projects globally. Direct contact via <strong>+256 778 625624</strong> or through GitHub <strong>@danmungufeni-dev</strong>.
-      </p>
+      <h2 class="section-title">Work & Professional Experience</h2>
+      
+      <div class="item-block">
+        <div class="item-header">
+          <span>Industrial Globus Uganda Ltd</span>
+          <span>Current</span>
+        </div>
+        <div class="item-sub">Assistant IT Personnel</div>
+        <p class="item-desc">Overseeing IT infrastructure, systems troubleshooting, hardware maintenance, network reliability, and technical support across internal operations.</p>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>GTNationDEV & AJMTechnologies</span>
+          <span>2023 &ndash; Present</span>
+        </div>
+        <div class="item-sub">Founder & Independent Digital Service Provider</div>
+        <p class="item-desc">Delivering tailored digital services spanning web development, graphic design, video editing, studio photography, component-level hardware repair, and software solutions.</p>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>Electoral Commission of Uganda</span>
+          <span>2026</span>
+        </div>
+        <div class="item-sub">Biometric Voter Verification Kit (BVVK) Operator</div>
+        <p class="item-desc">Operated and safeguarded biometric voter verification systems during the 2026 General Elections, ensuring seamless voter authentication and electronic data integrity.</p>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>Mvara Secondary School</span>
+          <span>2022 &ndash; 2023</span>
+        </div>
+        <div class="item-sub">Entertainment Prefect & Speaker (Mvara Maracha Students Association)</div>
+        <p class="item-desc">Led institutional audiovisual coordination, organized large-scale student body events, and moderated parliamentary sessions for the student association.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Active Projects & Fellowships</h2>
+      
+      <div class="item-block">
+        <div class="item-header">
+          <span>PadCare (Flutter Mobile App)</span>
+          <span>Active Development</span>
+        </div>
+        <p class="item-desc">Architecting a mobile application in Flutter dedicated to menstrual hygiene tracking, health education, and supply accessibility for young women in East Africa.</p>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>Aspire Leaders Program (Cohort 4)</span>
+          <span>Fellowship</span>
+        </div>
+        <p class="item-desc">Selected into the international leadership and social impact curriculum founded by Harvard University faculty.</p>
+      </div>
+
+      <div class="item-block">
+        <div class="item-header">
+          <span>Competitions & Academy Training</span>
+          <span>2026 &ndash; 2027</span>
+        </div>
+        <p class="item-desc">Registered for Huawei ICT Competition 2026/2027, Millennium Fellowship Class of 2027 candidate, DIZA Academy trainee, and practical cybersecurity training via Hack The Box Academy.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Core Competencies & Technical Setup</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-title">Software & Web</div>
+          <ul class="skill-list">
+            <li>HTML5 / CSS3 / JavaScript</li>
+            <li>Flutter & Dart (PadCare)</li>
+            <li>Python / Bash / Git & GitHub</li>
+            <li>GitHub Copilot & Google AI Studio</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-title">Hardware & IT Systems</div>
+          <ul class="skill-list">
+            <li>Hardware Diagnostics & Assembly</li>
+            <li>Intel Core i5-11400 (16GB RAM) Rig</li>
+            <li>HP EliteDesk 800 Tower PC</li>
+            <li>Kali Linux & Network Security</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-title">Creative & Audio</div>
+          <ul class="skill-list">
+            <li>Graphic Design & Brand Identity</li>
+            <li>Videography & Color Grading</li>
+            <li>Afrobeat & Amapiano Music Production</li>
+            <li>Photography & Studio Lighting</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </div>
 </body>
