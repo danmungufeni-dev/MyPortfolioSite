@@ -594,6 +594,31 @@ button, input, select, textarea {
 .modal-overlay.open {
   display: grid;
   opacity: 1;
+  animation: modalBackdropFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.modal-overlay.open .auth-card {
+  animation: modalCardEnter 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalBackdropFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalCardEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 .auth-card {
@@ -951,6 +976,28 @@ button, input, select, textarea {
   background: #eef2ee;
   border-color: #2d332e;
   transform: translateY(-1.5px);
+}
+
+.btn-guest-bypass {
+  background: transparent;
+  border: none;
+  color: #5d695d;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  transition: all var(--trans-fast);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.btn-guest-bypass:hover {
+  color: #1e251f;
+  background: rgba(45, 51, 46, 0.06);
 }
 
 .download-pack-selector {

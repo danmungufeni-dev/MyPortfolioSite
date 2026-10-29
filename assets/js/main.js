@@ -119,15 +119,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Check URL hash on load
-  const currentHash = window.location.hash.replace('#', '');
-  if (['login', 'register', 'download'].includes(currentHash)) {
-    if (modalOverlay) {
+  // Guest bypass button ("Continue to Homepage as Guest ->")
+  const guestBypassBtn = document.getElementById('guestBypassBtn');
+  if (guestBypassBtn) {
+    guestBypassBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeModal();
+      showToast('Exploring GTNationDEV portfolio in Guest Mode.');
+    });
+  }
+
+  // --- Auto-Popup Login Form First Before Accessing Home Page ---
+  function initAutoPopup() {
+    if (!modalOverlay) return;
+
+    // Check URL hash if specific mode is requested
+    const currentHash = window.location.hash.replace('#', '');
+    const validModes = ['login', 'register', 'download'];
+    const initialMode = validModes.includes(currentHash) ? currentHash : 'login';
+
+    // Check if user is already signed in
+    const activeUser = localStorage.getItem('gtnation_user');
+
+    if (!activeUser) {
+      // User is not signed in: Login form MUST pop up first before accessing the home page
+      setTimeout(() => {
+        openModal(initialMode);
+      }, 250);
+    } else if (validModes.includes(currentHash)) {
+      // User is logged in but specifically clicked a link with #login / #register / #download
       openModal(currentHash);
-    } else {
-      switchMode(currentHash);
     }
   }
+
+  initAutoPopup();
 
   // --- Password Visibility Toggles ---
   document.querySelectorAll('.btn-toggle-password').forEach(btn => {
@@ -206,6 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.removeItem('gtnation_user');
       updateUserSession();
       showToast('You have been signed out.');
+      setTimeout(() => {
+        openModal('login');
+      }, 400);
     });
   }
 
