@@ -28,6 +28,8 @@
 MyPortfolioSite/
 ├── index.html                    # Complete studio homepage with gatekeeper modal
 ├── auth.html                     # Standalone dedicated Login/Register/Download page
+├── favicon.ico                   # Official GTNationDEV glowing emblem favicon
+├── favicon.png                   # High-resolution 512x512 PNG favicon
 ├── server.ps1                    # Zero-dependency local HTTP server script
 ├── README.md                     # Project documentation & deployment guide
 ├── .gitignore                    # Standard development ignore rules
@@ -40,6 +42,10 @@ MyPortfolioSite/
     │   └── Dan_Mungufeni_CV.html # Print-ready & downloadable Curriculum Vitae
     └── images/
         ├── dan-mungufeni.jpg     # Official studio portrait of Dan Mungufeni
+        ├── favicon.png           # 512x512 GTNationDEV emblem icon
+        ├── favicon-32x32.png     # 32x32 browser tab icon
+        ├── favicon-16x16.png     # 16x16 browser tab icon
+        ├── apple-touch-icon.png  # 180x180 iOS touch icon
         ├── hero-login.png        # Cropped hero showcase banner for Login
         ├── hero-register.png     # Cropped hero showcase banner for Register
         └── logo.png              # GTNationDEV brand logo
