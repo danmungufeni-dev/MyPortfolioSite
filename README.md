@@ -42,6 +42,7 @@ MyPortfolioSite/
     │   └── Dan_Mungufeni_CV.html # Print-ready & downloadable Curriculum Vitae
     └── images/
         ├── dan-mungufeni.jpg     # Official studio portrait of Dan Mungufeni
+        ├── service-*.png         # 3D cyber-blue showcase cards for 6 core disciplines
         ├── favicon.png           # 512x512 GTNationDEV emblem icon
         ├── favicon-32x32.png     # 32x32 browser tab icon
         ├── favicon-16x16.png     # 16x16 browser tab icon

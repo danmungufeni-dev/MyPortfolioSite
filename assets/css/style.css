@@ -501,6 +501,73 @@ button, input, select, textarea {
   margin-top: 3.5rem;
 }
 
+/* ==========================================================================
+   3D CYBER SERVICES SHOWCASE GRID (High-Fidelity Match)
+   ========================================================================== */
+.services-3d-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 1080px) {
+  .services-3d-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-3d-grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.service-showcase-card {
+  position: relative;
+  border-radius: 28px;
+  cursor: pointer;
+  perspective: 1000px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card-inner {
+  position: relative;
+  width: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #040c1a;
+  box-shadow: 0 16px 40px rgba(5, 15, 30, 0.45), 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 1.5px solid rgba(56, 189, 248, 0.22);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card-visual {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 26px;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-showcase-card:hover {
+  transform: translateY(-9px) scale(1.02);
+}
+
+.service-showcase-card:hover .service-card-inner {
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 25px 60px rgba(14, 165, 233, 0.35), 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.service-showcase-card:hover .service-card-visual {
+  transform: scale(1.02);
+}
+
 .nestive-glass-card {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(14px);
