@@ -3,8 +3,6 @@
 > **BUILD &bull; CREATE &bull; INNOVATE**  
 > Official Portfolio, Authentication System, and Client Resource Hub for **Dan Mungufeni** ([@danmungufeni-dev](https://github.com/danmungufeni-dev)).
 
-![GTNationDEV Portfolio](assets/images/homepage-hero.jpg)
-
 ---
 
 ## 🌟 About Dan Mungufeni
@@ -28,24 +26,23 @@
 
 ```text
 MyPortfolioSite/
-├── index.html                    # Complete cinematic homepage with integrated modal
+├── index.html                    # Complete studio homepage with gatekeeper modal
 ├── auth.html                     # Standalone dedicated Login/Register/Download page
 ├── server.ps1                    # Zero-dependency local HTTP server script
 ├── README.md                     # Project documentation & deployment guide
 ├── .gitignore                    # Standard development ignore rules
 └── assets/
     ├── css/
-    │   └── style.css             # Cinematic dark theme, neon lights, glassmorphism, responsive grid
+    │   └── style.css             # Warm sage alabaster studio aesthetic, editorial serif typography
     ├── js/
-    │   └── main.js               # Modal controller, validation, toast notices, CV download
+    │   └── main.js               # Auto-popup gatekeeper, modal controller, validation, toast notices
     ├── docs/
     │   └── Dan_Mungufeni_CV.html # Print-ready & downloadable Curriculum Vitae
     └── images/
-        ├── dan-neon-portrait.jpg # Cropped cyan & magenta dual-light portrait of Dan
-        ├── homepage-hero.jpg     # Original full homepage mock
+        ├── dan-mungufeni.jpg     # Official studio portrait of Dan Mungufeni
         ├── hero-login.png        # Cropped hero showcase banner for Login
         ├── hero-register.png     # Cropped hero showcase banner for Register
-        └── logo.png              # Monogram and wordmark brand logo
+        └── logo.png              # GTNationDEV brand logo
 ```
 
 ---
